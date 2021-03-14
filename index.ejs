@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>Hi, <%=firstname %></p>
+
+<p>week <%=week_no %></p>
+<div id="accbal"></div>
+<div id="time"></div>    
+<table>
+    <thead>
+        <th>played</th>
+        <th>points</th>
+        <th>goals</th>
+        <th>won</th>
+        <th>loss</th>
+        <th>d1raw</th>
+        <th>team</th>
+        <th>skills</th>
+    </thead>
+    <tbody id="gen"></tbody>
+</table>
+
+<table>
+    <thead>
+        <th>Match</th>
+        <th>Home</th>
+        <th>Draw</th>
+        <th>Away</th>
+        <th>OV 1.5</th>
+        <th>OV 2.5</th>
+    </thead>
+    <tbody id="odds"></tbody>
+</table>
+
+
+
+<div id="addBet"></div>
+
+
+<input id="stake" type="number" value="600" placeholder="Stake">
+<button id="betButton">Bet</button>
+<button id="buttonClear">Clear</button>
+<br />
+			<br />
+			<br />
+			<br />
+			
+			<p id="displayError"></p>
+
+            <div id="pendingBet"></div>
+            
+            <div id="fulfillBet"></div>
+
+            <!-- <script src="public/mainleague.js"></script> -->
+        </body>
+
+</html>
