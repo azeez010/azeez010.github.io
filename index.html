@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataslid VFL</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+    <div class="flex p-2 px-3 mb-2 bg-purple-400 justify-between">
+        <p class="text-white font-bold">Dataslid VFL</p>
+        <div class="flex">
+            <span class="text-white">Acc bal:  </span>
+            <p class="text-white" id="accbal"></p>
+        </div>
+    </div>
+    <div class="m-8 md:flex w-full sm:block">
+        <div class="w-3/5"> 
+            <table  id="odds">
+                <tr>
+                    <th>Match</th>
+                    <th>Home (1)</th>
+                    <th>Draw (x)</th>
+                    <th>Away (2)</th>
+                    <th>over (1.5)</th>
+                    <th>over (2.5)</th>
+                </tr>
+            </table>
+            <br>
+            <p class="font-bold text-lg">League Table</p>
+            <table  id="gen">
+                <tr>
+                    <th>Played</th>
+                    <th>Points</th>
+                    <th>Goals</th>
+                    <th>Won</th>
+                    <th>Loss</th>
+                    <th>Draw</th>
+                    <th>Team Name</th>
+                    <th>Skills Points</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <div class="mt-2 mb-2 bg-gray-200 p-2" id="addBet"></div>
+            <input class="border-2 border-purple-500" placeholder="Stake..." type="number" id="stake">
+            <button class="p-1 bg-purple-400 text-white" id="betButton">Bet</button>
+            <button class="p-1 bg-purple-400 text-white" id="buttonClear">Clear</button>
+            <div id="errors" class="bg-red-500 text-lg font-bold text-white"></div>
+            <p id="time"></p>
+            <div id="pendingBet"></div>
+            <p class="font-bold text-lg">Results</p>
+            <div class="mt-2 mb-2 bg-gray-100 p-2" id="fulfillBet"></div>
+        </div>
+    </div>
+
+
+    <script src="mainleague.js"></script>
+</body>
+</html>

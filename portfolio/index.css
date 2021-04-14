@@ -1,0 +1,91 @@
+#hero {
+    background-image: url("static/background.svg");
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+nav{
+    position: sticky;
+}
+
+#hamburger, .hamburger{
+    border-radius: 50px;
+    display: inline-block;
+}
+.resDisplay{
+        display: inline-block;
+        float: right;
+    }
+
+.text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 400px){
+    .resDisplay{
+        display: none;
+    }
+}
+
+.ani-bounce	{
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+0%, 100% {
+    transform: translateY(-5%);
+    z-index: -1;
+    animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
+}
+50% {
+    transform: translateY(0);
+    z-index: -1;
+    animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.ani-slide	{
+    animation: slide 15s infinite;
+}
+@keyframes slide {
+0%, 100% {
+    transform: translateX(-70%);
+    z-index: -1;
+    animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
+}
+50% {
+    transform: translateY(0);
+    z-index: -1;
+    animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+ /* .arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid green;
+  }  */
+
+  .circle{
+      border-radius: 50px;
+  }
+
+  /* .eachProject:hover{
+    animation: projectAnimate 30s infinite;
+}
+
+
+@keyframes projectAnimate {
+    0%, 100% {
+        transform: scale(0.1);
+        animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
+    }
+} */
+
+
+.center-grid{
+    justify-content: center;
+    align-content: center;
+}
